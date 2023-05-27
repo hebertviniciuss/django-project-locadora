@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmes - Cinema Paradise</title>
+  </head>
+  <body>
+    <h1>Nossos Filmes</h1>
+    <ul>
+        {% for filme in filmes %} 
+        <li style="list-style-type: none">
+            <hr>
+            <p>Título: {{filme.titulo}}</p> 
+            <p>Preço do Ingresso: R$ {{filme.valor}}</p> 
+            <p>Categoria: {{filme.categoria}}</p> 
+            <hr>
+        </li>
+        {% endfor %}
+    </li>
+  </body>
+</html>
